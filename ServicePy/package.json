@@ -1,0 +1,25 @@
+{
+  "name": "servicepy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.py",
+  "scripts": {
+    "dev": "nodemon",
+    "start": "fastapi run src/main.py"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  },
+  "nodemonConfig": {
+    "verbose": true,
+    "exec": "fastapi run src/main.py",
+    "ext": "py",
+    "watch": [
+      "src/*"
+    ],
+    "delay": "1000"
+  }
+}

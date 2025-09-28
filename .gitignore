@@ -1,3 +1,5 @@
 /ServiceTs/build
 /ServiceTs/dist
 node_modules
+
+__pycache__
