@@ -1,0 +1,33 @@
+{
+  "name": "servicets",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "build": "tsc",
+    "dev": "nodemon"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.5.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  },
+  "nodemonConfig": {
+    "verbose": true,
+    "exec": "ts-node ./src/index.ts",
+    "ext": "ts",
+    "watch": [
+      "src/*"
+    ],
+    "delay": "1000"
+  }
+}
