@@ -1,4 +1,13 @@
 {
+  "scripts": {
+    "start:py": "cd ./ServicePy && pnpm run start",
+    "dev:py": "cd ./ServicePy && pnpm run dev",
+
+    "start:ts": "cd ./ServiceTs && pnpm run start",
+    "dev:ts": "cd ./ServiceTs && pnpm run dev",
+
+    "setup": "cd ./ServiceTs && pnpm i && cd ../ServicePy && pip install -r requirements.txt"
+  },
   "devDependencies": {
     "cz-conventional-changelog": "^3.3.0"
   },
