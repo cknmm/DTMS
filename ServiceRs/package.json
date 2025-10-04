@@ -1,0 +1,25 @@
+{
+  "name": "servicers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon",
+    "start": "cargo run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  },
+  "nodemonConfig": {
+    "verbose": true,
+    "exec": "cargo run",
+    "ext": "rs",
+    "watch": [
+      "src/*"
+    ],
+    "delay": "1000"
+  }
+}
