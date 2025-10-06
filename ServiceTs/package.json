@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node src/index.ts",
+    "start": "tsc && node --import ./dist/instrumentation.js ./dist/index.js",
     "build": "tsc",
     "dev": "nodemon"
   },
@@ -16,9 +16,11 @@
     "@opentelemetry/auto-instrumentations-node": "^0.64.6",
     "@opentelemetry/exporter-metrics-otlp-proto": "^0.205.0",
     "@opentelemetry/exporter-trace-otlp-proto": "^0.205.0",
+    "@opentelemetry/resources": "^2.1.0",
     "@opentelemetry/sdk-metrics": "^2.1.0",
     "@opentelemetry/sdk-node": "^0.205.0",
     "@opentelemetry/sdk-trace-node": "^2.1.0",
+    "@opentelemetry/semantic-conventions": "^1.37.0",
     "express": "^5.1.0",
     "nodemon": "^3.1.10"
   },
