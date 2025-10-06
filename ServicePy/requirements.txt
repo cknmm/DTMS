@@ -1,1 +1,12 @@
-fastapi==0.117.1
+fastapi==0.118.0
+
+#opentelemetry dependencies
+opentelemetry-api==1.37.0
+opentelemetry-exporter-otlp==1.37.0
+opentelemetry-instrumentation==0.58b0
+opentelemetry-instrumentation-asgi==0.58b0
+opentelemetry-instrumentation-fastapi==0.58b0
+opentelemetry-proto==1.37.0
+opentelemetry-sdk==1.37.0
+opentelemetry-semantic-conventions==0.58b0
+opentelemetry-util-http==0.58b0
